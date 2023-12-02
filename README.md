@@ -34,7 +34,7 @@ Required Dependencies:
 
 Before Running the project, please make sure to:
   1. Run com.example.trip_planner.sql as this script will create the required database along with all necessary columns.
-  2. Copy the MySQL JDBC driver jar file to your CATALINA_HOME/lib/ (installation directory of your Tomcat server/lib/). Tomcat will not be able to use the Driver resource otherwise.
+  2. Copy the MySQL JDBC driver jar file to your CATALINA_HOME/lib/ (OR installation directory of your Tomcat server/lib/). Tomcat will not be able to use the Driver resource otherwise.
 
 Running the project:<br>
  Step-1: Clone the repository.<br>
