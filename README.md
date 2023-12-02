@@ -37,6 +37,6 @@ Before Running the project, please make sure to:
   2. Copy the MySQL JDBC driver jar file to your CATALINA_HOME/lib/ (installation directory of your Tomcat server/lib/). Tomcat will not be able to use the Driver resource otherwise.
 
 Running the project:
- Step 1: Clone the repository.
- Step 2: Open index.jsp and let IntelliJ look for any missing dependencies. It will prompt you for installing them if it detects any.
- Step 3: Run the index.jsp file using apache tomcat for using the project.
+ Step-1: Clone the repository.
+ Step-2: Open index.jsp and let IntelliJ look for any missing dependencies. It will prompt you for installing them if it detects any.
+ Step-3: Run the index.jsp file using apache tomcat for using the project.
