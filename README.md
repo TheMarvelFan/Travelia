@@ -32,6 +32,8 @@ Required Dependencies:
 
 (All of the above dependencies can be installed using Maven)
 
+![Acer](C:\Users\Super\OneDrive\Pictures\Acer\Acer_Wallpaper_01_3840x2400 "Acer")
+
 Before Running the project, please make sure to:
   1. Run com.example.trip_planner.sql as this script will create the required database along with all necessary columns.
   2. Copy the MySQL JDBC driver jar file to your CATALINA_HOME/lib/ (OR installation directory of your Tomcat server/lib/). Tomcat will not be able to use the Driver resource otherwise.
