@@ -35,6 +35,7 @@ Required Dependencies:
 Before Running the project, please make sure to:
   1. Run com.example.trip_planner.sql as this script will create the required database along with all necessary columns.
   2. Copy the MySQL JDBC driver jar file to your CATALINA_HOME/lib/ (OR installation directory of your Tomcat server/lib/). Tomcat will not be able to use the Driver resource otherwise.
+  3. Go to com.kushagra.tripplanner.DataBConnection and modify the url for connecting to Database, such as the port number (project default is 3308), username (project default is 'root'), and password based on your system environment settings.
 
 Running the project:<br>
  Step-1: Clone the repository.<br>
