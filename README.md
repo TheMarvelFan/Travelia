@@ -1,5 +1,5 @@
-# Travelia
-## A trip planning website written in Java
+<h1 align="center">Travelia</h1>
+<p align="center"><i><b>🎉 Travel the World 🎉</b></i></p>
 
 This project is an attempt to record my skills in Java. It is an online trip planner written in HTML/JSP, CSS and JavaScript for frontend, and Java EE for backend, using MySQL for Database. Here is what you can do on this project:
   * As User, you can plan your trip to one of the added locations, for your choice of number of days.
