@@ -53,7 +53,7 @@ Before Running the project, please make sure to:
  Step-6: On the window that has opened, go to the top left "+" icon, which will provide a list of servers to run this project on. Tomcat is preferred.<br><br>
  ![Screenshot 2023-12-03 204954](https://github.com/TheMarvelFan/Travelia/assets/93257324/b8781ab3-6d1b-4998-8f1b-91da4300eac1)<br><br>
  ![Screenshot 2023-12-03 205059](https://github.com/TheMarvelFan/Travelia/assets/93257324/b9b91f91-bc55-4e63-948d-34d3f8e5baf0) <br><br>
- Step-7: Go to Tomcat, and click on the dropdown icon bside it. Select "Local". (Note that this will appear only if Tomcat Server has been previously installed on your system and configured on IntelliJ)<br>
+ Step-7: Go to Tomcat, and click on the dropdown icon bside it. Select "Local". (Note that this will appear only if Tomcat Server has been previously installed on your system and configured on IntelliJ)<br><br>
  ![Screenshot 2023-12-03 214639](https://github.com/TheMarvelFan/Travelia/assets/93257324/47bd3100-610e-41e6-b5b2-12c1a874d611) <br><br>
  Step-8: Select "Deployment" from server configuration options, and click on the "+" icon in "Deploy at server startuup" portion.<br><br>
  ![Screenshot 2023-12-03 203100](https://github.com/TheMarvelFan/Travelia/assets/93257324/02cf89d5-282e-49f3-a696-f4e1ae6d15f6) <br><br>
