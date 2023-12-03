@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h6>Your first visit ? call for info </h6>
                 <p>+91-</p>
                 <ul class="f-icons">
-                    <li><a href="login.jsp" class=""><h4 >Login </h4></a></li>
+                    <li><a href="login.jsp" class=""><h4 >Login</h4></a></li>
                     <li><a href="#" class="">| </a></li>
                     <li><a href="registration.jsp" class=""> <h4>New Registration</h4></a></li>
 

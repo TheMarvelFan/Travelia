@@ -3,35 +3,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login::</title>
-<!-- for-mobile-apps -->
-<!-- //for-mobile-apps -->
-<link href='//fonts.googleapis.com/css1?family=Lato:400,100,100italic,300italic,300,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css1?family=Salsa' rel='stylesheet' type='text/css'>
-<!-- js -->
-<link href="bootstrap.css" rel='stylesheet' type='text/css' />
-<!--Custom-Theme-files-->
-	<link href="style.css" rel='stylesheet' type='text/css' />	
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Travelia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link href="bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- Custom Theme files -->
+		<link href="style.css" rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+		<script src="js/jquery.min.js"> </script>
+		<!--/script-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
 
-<script type="text/javascript" src="js1/jquery-2.1.4.min.js"></script>
-<!-- js -->
-<link href="css1/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- script for close -->
-<script>
-$(document).ready(function(c) {
-	$('.alert-close').on('click', function(c){
-		$('.vlcone').fadeOut('slow', function(c){
-			$('.vlcone').remove();
-		});
-	});	  
-});
-</script>
-<!-- //script for close -->
-
-    </head>
-    <body>
-        <div id="home" class="header">
+	</head>
+	<body>
+	<!--start-home-->
+	<div id="home" class="header">
 		<div class="header-top">
 			<div class="container">
 				<div class="logo">
@@ -39,37 +37,53 @@ $(document).ready(function(c) {
 				</div>
 				<span class="menu"></span>
 				<div class="top-menu">
-				<ul class="cl-effect-16">
-						<li><a class="" href="index.jsp" data-hover="HOME">Home</a></li> 
+					<ul class="cl-effect-16">
+						<li><a class="" href="index.jsp" data-hover="HOME">Home</a></li>
 						<li><a href="about.jsp" data-hover="About">About</a></li>
 						<li><a href="gallery.jsp" data-hover="Gallery">Gallery</a></li>
-				         	<li><a href="contact.jsp" data-hover="CONTACT">Contact</a></li>
-                                                <li><a href="trip.jsp" data-hover="Trip Plan">Trip Plan</a></li>
+						<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
+						<li><a href="trip.jsp" data-hover="Trip Plan">Trip Plan</a></li>
 
 					</ul>
 				</div>
-				
- </div>
- </div>
-             </div>
+				<div class="top_right">
+					<h6>Your first visit? Call for more info </h6>
+					<p>+91-00000000</p>
+				</div>
+				<script>
+					$( "span.menu" ).click(function() {
+						$( ".top-menu" ).slideToggle( "slow", function() {
+							// Animation complete.
+						});
+					});
+				</script>
 
+				<div class="clearfix"></div>
+				<!--End-top-nav-script-->
+			</div>
+		</div>
+		<div class="banner two">
+			<div class="container">
+				<h2 class="second"></h2>
+			</div>
+		</div>
+	</div>
 
-	
-       <div class="content">
-		<h1>Login Form </h1>
+       <div class="content" style="text-align: center;">
+		<h1 style="margin-top: 4px; margin-bottom: 0;">Login Form </h1>
 		<div class="main vlcone">
 		
 			<div class="hotel-left">
-				<div class="pay_form">
-					<h2>Login Here</h2>
-                                        <form action="login" method="post">
-                                            <input class="logo" type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Username';}" required="" name="t1">
-                                            <input class="key" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Password';}" required="" name="t2">
+				<div class="pay_form" style="text-align: center;">
+					<h2 style="text-align: center; margin-top: 4px; margin-bottom: 4px;">Login Here</h2>
+					<form action="login" method="post">
+						<input style="margin-left: 195px; padding-right: 30px; margin-top: 2px; margin-bottom: 2px;" class="logo" type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Username';}" required="" name="t1">
+						<input style="margin-top: 2px; margin-bottom: 2px;" class="key" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Password';}" required="" name="t2">
 						<input type="submit" value="Login">
 					</form>
 				</div>
-				<a href="ForgotPassword.jsp">Forgot Password</a>
-				<a href="registration.jsp" class="login-right">Register</a>
+				<a href="ForgotPassword.jsp" style="text-align: center;">Forgot Password</a>
+				<a href="registration.jsp" class="login-right" style="text-align: center;">Register</a>
 				<div class="clear"></div>
 			</div>
 			<div class="hotel-right">
@@ -84,7 +98,7 @@ $(document).ready(function(c) {
 			</div>
 			<div class="clear"></div>
 		</div>
-		   <div class="copy">
+		   <div class="copy" style="margin-top: 315px;">
 			   <p>&copy; 2023 All Rights Reserved </p>
 		   </div>
 	</div>
