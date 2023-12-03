@@ -18,6 +18,7 @@ For running the project on your system, make sure that you have the following in
   - IntelliJ Idea (Community or Ultimate) (It is easier with IntelliJ as it can detect and add dependencies by itself)
   - MySql Server 8.0 or higher
   - Apache Tomcat (for local hosting) 10.1.13 or higher
+  - Apache Maven 3.9.4 or higher
 
 Required Dependencies:
   1. Jakarta EE Web Api version 9.1.0 or higher
@@ -40,4 +41,7 @@ Before Running the project, please make sure to:
 Running the project:<br>
  Step-1: Clone the repository.<br>
  Step-2: Open index.jsp and let IntelliJ look for any missing dependencies. It will prompt you for installing them if it detects any.<br>
- Step-3: Run the index.jsp file using apache tomcat for using the project.<br>
+ Step-3: Make sure that Maven is installed and configured on your system. Navigate to the cloned project's root directory, and run the following command: <br>
+         "mvn clean install"<br>
+         This will create the war:exploded file for the project. Tomcat (or any other server) runs the project using the war:exploded file.
+ Step-4: Run the index.jsp file using apache tomcat for using the project.<br>
