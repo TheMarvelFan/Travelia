@@ -1,4 +1,4 @@
-![image](https://github.com/TheMarvelFan/Travelia/assets/93257324/0c15220b-ee8d-4cdd-8123-587965fb5290)<h1 align="center">Travelia</h1>
+<h1 align="center">Travelia</h1>
 <p align="center"><i><b>🎉 Travel the World 🎉</b></i></p>
 
 This project is an attempt to record my skills in Java. It is an online trip planner written in HTML/JSP, CSS and JavaScript for frontend, and Java EE for backend, using MySQL for Database. Here is what you can do on this project:
