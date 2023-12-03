@@ -13,8 +13,8 @@ This project is an attempt to record my skills in Java. It is an online trip pla
   * Delete a location to take a trip to.
   * Add new / modify existing trip packages to specific locations.
 
-## Follow these steps to run the project on your system:
-For running the project on your system, make sure that you have the following installed and configured:
+## Prerequisites:
+Before running the project on your system, make sure that you have the following installed and configured:
   - IntelliJ Idea (Community or Ultimate) (It is easier with IntelliJ as it can detect and add dependencies by itself)
   - MySql Server 8.0 or higher
   - Apache Tomcat (for local hosting) 10.1.13 or higher
@@ -39,7 +39,7 @@ Before Running the project, please make sure to:
   3. Go to com.kushagra.tripplanner.DataBConnection and modify the url for connecting to Database, such as the port number (project default is 3308), username (project default is 'root'), and password based on your system environment settings. (Note that you should do this before following step-4 of [Running the project](#Running the project)).
   4. Install and configure Maven latest version on your system. Set Maven system environment variable.
 
-##Running the project:<br>
+## Running the project:<br>
  Step-1: Clone the repository.<br>
  Step-2: Navigate to the root directory of the cloned project. Right click on the directory and select "Open folder as Intellij Project". <br> 
  Step-3: Open src/main/webapp.index.jsp file. Let IntelliJ look for any missing dependencies. It will prompt you for installing them if it finds any.<br>
