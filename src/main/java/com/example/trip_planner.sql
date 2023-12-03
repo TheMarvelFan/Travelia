@@ -87,8 +87,8 @@ CREATE TABLE `trip` (
   `id` int(4) NOT NULL AUTO_INCREMENT,
   `t_cat` varchar(50) DEFAULT NULL,
   `location` varchar(50) DEFAULT NULL,
-  `trip_day` varchar(50) DEFAULT NULL,
-  `price` varchar(50) DEFAULT NULL,
+  `trip_day` int DEFAULT NULL,
+  `price` int DEFAULT NULL,
   `disc` varchar(500) DEFAULT NULL,
   `photo` varchar(200) DEFAULT NULL,
   `a_date` date DEFAULT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE `trip` (
 
 /*Data for the table `trip` */
 
-insert  into `trip`(`id`,`t_cat`,`location`,`trip_day`,`price`,`disc`,`photo`,`a_date`) values (7,'Honeymoon_Package','delhi','4 day','25400','ds ss wd','./Jellyfish.jpg','2016-05-03'),(10,'Family_Travel','dsk','3 day','2332','ass sdasa as','./Koala.jpg','2016-05-03'),(11,'Honeymoon_Package','dj','5','1212','ds dss ','./Hydrangeas.jpg','2016-05-03'),(12,'Group_Travel','nenital','5 day','2500','dfd  dfdf dfdfd df','./p4.jpg','2016-05-03'),(13,'Honeymoon_Package','dfdkq','11 day','12112','dsds dsds sdsd sds','./p1.jpg','2016-05-03');
+insert  into `trip`(`id`, `t_cat`, `location`, `trip_day`, `price`, descr, `photo`, `a_date`) values (7, 'Honeymoon_Package', 'delhi', 4, 25400, 'ds ss wd', './Jellyfish.jpg', '2016-05-03'),(10, 'Family_Travel', 'dsk', 3, 2332, 'ass sdasa as', './Koala.jpg', '2016-05-03'),(11, 'Honeymoon_Package', 'dj', 5, 1212, 'ds dss ', './Hydrangeas.jpg', '2016-05-03'), (12,'Group_Travel', 'Nainital', 5, 2500, 'dfd  dfdf dfdfd df', './p4.jpg', '2016-05-03'), (13, 'Honeymoon_Package', 'dfdkq', 11, 12112, 'dsds dsds sdsd sds', './p1.jpg', '2016-05-03');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

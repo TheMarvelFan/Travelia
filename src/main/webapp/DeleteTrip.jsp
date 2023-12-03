@@ -1,11 +1,11 @@
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="com.kushagra.onlinetripplanner.DataBConnection" %>
 <%@ page import="java.sql.Statement" %>
-
-<!DOCTYPE html>
+<%@ page import="com.kushagra.onlinetripplanner.DataBConnection" %>
+<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>View Booking</title>
+    <title>View / Delete Trips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Travelia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -27,8 +27,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-
-
 </head>
 <body>
 <%
@@ -52,8 +50,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="cl-effect-16">
                     <li><a class="" href="adminHome.jsp" data-hover="Home">Home</a></li>
                     <li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip Plan</a></li>
-                    <li><a href="DeleteTrip.jsp" data-hover="Delete / View">Delete / View</a></li>
                     <li><a href="viewfeedback.jsp" data-hover="View Feedback">View Feedback</a></li>
+                    <li><a href="viewbooking.jsp" data-hover="View Booking">View Booking</a></li>
                 </ul>
             </div>
             <div class="top_right">
@@ -94,57 +92,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <%
                     try {
                         Statement statement = DataBConnection.getConnection().createStatement();
-                        ResultSet resultSet = statement.executeQuery("select * from booking");
-                        out.println("<table width=1200 bgcolor=#B9E1F5 border='1'>");
-
+                        ResultSet resultSet = statement.executeQuery("select * from trip");
+                        out.println("<table width=1200   bgcolor=#B9E1F5 border='1'>");
                         out.println("<tr height=10 bgcolor=#5DD0CF>");
-                        out.println("<td align=center><p style=color:#F66755;>Booking Id</p></td><td align=center><p style=color:#F66755;>Customer Id</p></td><td align=center><p style=color:#F66755;>Number of person</p></td><td align=center><p style=color:#F66755;>Date</p></td><td align=center><p style=color:#F66755;>View Customer Details</p></td>");
+                        out.println("<td align=center><p style=color:#F66755;>Trip Id</p></td><td align=center><p style=color:#F66755;>Category</p></td><td align=center><p style=color:#F66755;>Location</p></td><td align=center><p style=color:#F66755;>Trip Days</p></td><td align=center><p style=color:#F66755;>Price</p></td><td align=center><p style=color:#F66755;>Date</p></td><td align=center><p style=color:#F66755;>Action</p></td>");
                         out.println("</tr>");
-
                         while (resultSet.next()) {
-                            String name = resultSet.getString(1);
-                            String cname = resultSet.getString(2);
-                            String id = resultSet.getString(3);
-                            String gender = resultSet.getString(4);
-
-
-                            out.println("<tr bgcolor=#DFF5E1 height=40px><td align=center>" + name + "</td><td align=center>" + cname + "</td><td align=center>" + id + "</td><td align=center>" + gender + "</td><td align=center><a href=view_order1.jsp?id=" + cname + ">View Details</a></td>");
+                            String id = resultSet.getString(1);
+                            String category = resultSet.getString(2);
+                            String location = resultSet.getString(3);
+                            int days = resultSet.getInt(4);
+                            int price = resultSet.getInt(5);
+                            String date = resultSet.getString(8);
+                            out.println("<tr bgcolor=#DFF5E1 height=40px><td align=center>" + id + "</td><td align=center>" + category + "</td><td align=center>" + location + "</td><td align=center>" + days + "</td><td align=center>" + price + "<td align=center>" + date + "</td><td align=center><a href=deletetrip?id=" + id + ">Delete</a></td>");
                             out.println("</tr>");
-
                         }
-
                         out.println("</table>");
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
+                    } catch (SQLException | ClassNotFoundException e) {
+                        throw new RuntimeException(e);
                     }
-                %>
-
-                <%
                     String m=request.getParameter("msg");
                     if(m!=null) {
-                        out.println("<p style='color:red;'>" + m + "</p>");
+                        out.println("<p style='color:red'>" + m + "</p>");
                     }
                 %>
             </div>
-
             <div class="clearfix" style="border-style: solid"></div>
         </div></div>
 
 </div>
-
-
-<!--start-welcome-->
-
-<!--//end-welcome-->
-<!--start-services-->
-<!-- service-type-grid -->
-<!--//service-type-grid -->
-<!--testimonials-->
-
-<!--contact-->
-
-<!--map-->
-
-
 </body>
 </html>

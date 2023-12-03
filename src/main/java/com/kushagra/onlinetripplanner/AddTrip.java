@@ -39,7 +39,7 @@ public class AddTrip extends HttpServlet {
                 }
             }
 
-            PreparedStatement preparedStatement = DataBConnection.getConnection().prepareStatement("insert into trip (t_cat,location,trip_day,price,disc,photo,a_date) values (?,?,?,?,?,?,curdate());");
+            PreparedStatement preparedStatement = DataBConnection.getConnection().prepareStatement("insert into trip (t_cat,location,trip_day,price,descr,photo,a_date) values (?,?,?,?,?,?,curdate());");
             preparedStatement.setString(1, value[0]);
             preparedStatement.setString(2, value[1]);
             preparedStatement.setString(3, value[2]);

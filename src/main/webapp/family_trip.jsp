@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        <%
 						   try {
 							   String cat = "Family_Travel";
-							   PreparedStatement preparedStatement = DataBConnection.getConnection().prepareStatement("select location, trip_day, price, disc, photo from trip where t_cat= ?");
+							   PreparedStatement preparedStatement = DataBConnection.getConnection().prepareStatement("select location, trip_day, price, descr, photo from trip where t_cat= ?");
 							   preparedStatement.setString(1, cat);
 							   ResultSet resultSet = preparedStatement.executeQuery();
 							   while (resultSet.next()) {

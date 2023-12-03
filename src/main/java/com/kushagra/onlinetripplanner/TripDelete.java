@@ -19,9 +19,9 @@ public class TripDelete extends HttpServlet {
             preparedStatement.setString(1, code);
             int x = preparedStatement.executeUpdate();
             if (x > 0) {
-                response.sendRedirect("view_trip.jsp?msg= Successfully deleted trip.");
+                response.sendRedirect("DeleteTrip.jsp?msg= Successfully deleted trip.");
             } else {
-                response.sendRedirect("view_trip.jsp?msg= Error in deleting trip.!");
+                response.sendRedirect("DeleteTrip.jsp?msg= Error in deleting trip.");
             }
         } catch (SQLException | IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);

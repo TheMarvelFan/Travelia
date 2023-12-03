@@ -84,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                        <%
                        String cat="Honeymoon_Package";
 					   try {
-						   PreparedStatement preparedSatement = DataBConnection.getConnection().prepareStatement("select location,trip_day,price,disc,photo from trip where t_cat='" + cat + "'");
+						   PreparedStatement preparedSatement = DataBConnection.getConnection().prepareStatement("select location,trip_day,price,descr,photo from trip where t_cat='" + cat + "'");
 						   ResultSet resultSet = preparedSatement.executeQuery();
 						   while (resultSet.next()) {
 							   String loc = resultSet.getString(1);

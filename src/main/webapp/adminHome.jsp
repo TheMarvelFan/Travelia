@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>| Admin Home </title>
+	<title>Admin Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Travelia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -49,19 +49,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<span class="menu"></span>
 			<div class="top-menu">
 				<ul class="cl-effect-16">
-					<li><a href="adminHome.jsp" data-hover="HOME">Home</a></li>
-					<li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip plan</a></li>
-					<li><a href="view_trip.jsp" data-hover="Delete">View Trip</a></li>
-					<li><a href="viewbooking.jsp" data-hover="View">View Booking</a></li>
-					<li><a href="viewfeedback.jsp" data-hover="feedback">View Feedback</a></li>
-
-
+					<li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip Plan</a></li>
+					<li><a href="DeleteTrip.jsp" data-hover="Delete / View">Delete / View</a></li>
+					<li><a href="viewbooking.jsp" data-hover="View Booking">View Booking</a></li>
+					<li><a href="viewfeedback.jsp" data-hover="View Feedback">View Feedback</a></li>
 				</ul>
 			</div>
 			<div class="top_right">
 				<ul class="f-icons">
 					<li><a href="logout" class=""><h4 style="color:red;" >Logout </h4></a></li>
-					<li><a href="#" class="">| </a></li>
+					<li>|</li>
 					<li><a href="changePass.jsp" class=""> <h4 style="color:greenyellow;">Change Password</h4></a></li>
 				</ul>
 
