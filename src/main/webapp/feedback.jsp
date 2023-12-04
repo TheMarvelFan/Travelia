@@ -86,14 +86,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <div style="text-align: center;">
              <form method="get" action="feedback">
             <fieldset width="100px" height=200px">
-                <legend><h1><p style="color:brown;">Feedback</p></h1></legend>
+                <legend><h1><p style="color:brown; margin-top: 4px;">Feedback</p></h1></legend>
                 <table>
                     <br></br>
-                    <tr height="30px"><td>User Id<label style="color:red;">*</label> </td><td width="20px"></td><td><input type="text" name="t1" style="height: 20px"></td></tr>
+                    <tr height="30px"><td>User Id<label style="color:red; text-align: center;">*</label> </td><td width="20px"></td><td><input type="text" name="t1" style="height: 20px"></td></tr>
                     
-                    <tr height="30px"><td>Subject </td><td width="20px"></td><td><input type="text" name="t2" style="height: 20px"></td></tr>
-                    <tr height="30px"><td> Message </td><td width="20px"></td><td><textarea name="t3"style="width:300px;height: 70px;"> </textarea></td></tr>
-                   <tr height="30px"></tr><tr height="30px"><td><input type="submit" value="Send" style="width:90px;height: 30px ;background-color:lightskyblue;"> </td><td width="20px"></td><td><input type="reset" value="Clear" style="width: 90px ;height: 30px;background-color: indianred;"></td></tr>
+                    <tr height="30px"><td>Subject </td><td width="20px"></td><td><input type="text" name="t2" style="height: 20px; text-align: center;"></td></tr>
+                    <tr height="30px"><td> Message </td><td width="20px"></td><td><textarea name="t3" style="width:300px;height: 70px; text-align: center;"> </textarea></td></tr>
+                   <tr height="30px"></tr><tr height="30px"><td><input type="submit" value="Send" style="width:90px;height: 30px ;background-color:lightskyblue; text-align: center;"> </td><td width="20px"></td><td><input type="reset" value="Clear" style="width: 90px ;height: 30px;background-color: indianred;"></td></tr>
                     <tr height="50px"><td>
                            
                 </table>

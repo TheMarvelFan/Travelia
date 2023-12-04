@@ -64,30 +64,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="banner two">
 			<div class="container">
-				<h2 class="second"></h2>
+				<h2 class="second">Login</h2>
 			</div>
 		</div>
 	</div>
-
-       <div class="content" style="text-align: center;">
-		<h1 style="margin-top: 4px; margin-bottom: 0;">Login Form </h1>
-		<div class="main vlcone">
-		
+	<br><br><br><br>
 			<div class="hotel-left">
 				<div class="pay_form" style="text-align: center;">
-					<h2 style="text-align: center; margin-top: 4px; margin-bottom: 4px;">Login Here</h2>
+					<h2 style="text-align: center; margin-top: 2px; margin-bottom: 4px;">Login Here</h2>
 					<form action="login" method="post">
-						<input style="margin-left: 195px; padding-right: 30px; margin-top: 2px; margin-bottom: 2px;" class="logo" type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Username';}" required="" name="t1">
-						<input style="margin-top: 2px; margin-bottom: 2px;" class="key" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Password';}" required="" name="t2">
-						<input type="submit" value="Login">
+						<input style="text-align: center; margin-left:  558px ; padding-right: 0px; margin-top: 25px; margin-bottom: 2px;" class="logo" type="text" value="Username" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Username';}" required="" name="t1"><br></br>
+						<input style="margin-top: 25px;margin-left:  -1141px; margin-bottom: 2px;" class="key" type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value === '') {this.value = 'Password';}" required="" name="t2"><br>
+						<input style="margin-top: 25px" type="submit" value="Login">
 					</form>
 				</div>
-				<a href="ForgotPassword.jsp" style="text-align: center;">Forgot Password</a>
-				<a href="registration.jsp" class="login-right" style="text-align: center;">Register</a>
+				<a href="ForgotPassword.jsp" style="text-align: center; margin-left: 558px;">Forgot Password</a><br>
+				<a href="registration.jsp" class="login-right" style="text-align: center; margin-left: 558px;">Register</a>
 				<div class="clear"></div>
 			</div>
 			<div class="hotel-right">
-				<h3>ONLINE TRIP <span>PLANNER</span></h3>
                                  <%
                             String abc=request.getParameter("msg");
                             if(abc!=null) {
@@ -97,7 +92,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p></p>
 			</div>
 			<div class="clear"></div>
-		</div>
 		   <div class="copy" style="margin-top: 315px;">
 			   <p>&copy; 2023 All Rights Reserved </p>
 		   </div>
