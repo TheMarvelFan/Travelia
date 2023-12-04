@@ -1,9 +1,3 @@
-<%-- 
-    Document   : feedback
-    Created on : Mar 16, 2016, 1:09:23 AM
-    Author     : AJAY YADAV
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

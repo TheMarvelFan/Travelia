@@ -1,9 +1,3 @@
-<%-- 
-    Document   : trip
-    Created on : Mar 15, 2016, 3:01:44 AM
-    Author     : AJAY YADAV
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : about
-    Created on : Mar 14, 2016, 4:56:38 AM
-    Author     : AJAY YADAV
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
