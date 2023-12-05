@@ -98,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             out.println("<table width=900");
 
             out.println("<tr height=70 bgcolor=#68D3D4>");
-            out.println("<td>Member_id</id><td>Subject</td><td>Massage</td>");
+            out.println("<td>Member_id</id><td>Subject</td><td>Message</td>");
             out.println("</tr>");
             while (resultSet.next()) {
                 String id = resultSet.getString(1);

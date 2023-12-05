@@ -82,18 +82,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-6 contact-in">
 						<h5>Holiday Trip Planner</h5>
 						<p class="para1">Holiday Trip Planner travel planning functionality makes it easy for users to plan holiday in a matter of minutes. By pre-planning your dream holiday, you can then proceed to book with ease. Holiday Trip Planner is an online travel management system. It aimed to offer a range of best-value services to ensure that tour runs smoothly and efficiently. It offers a complete range of services for the business and individual traveler. </p>
-						<div class="more-address"> 
-								<address>
-								  <strong>..........</strong><br>
-								  ...............<br>
-								  ................<br>
-								  <abbr title="Phone">P :</abbr> 
-								</address>
-								<address>
-								  <strong>Full Name</strong><br>
-								  <a href="mailto:info@example.com">mail@example.com</a>
-							   </address>
-						  </div>
+						<br>
+						<p class="para1">Discover seamless travel planning with our user-friendly platform. Pre-plan your dream holiday effortlessly, then proceed to book with ease. Holiday Trip Planner provides efficient online travel management for both business and individual travelers.</p>
 					</div>
 					<div class="col-md-6 contact-grid">
 						<form>
