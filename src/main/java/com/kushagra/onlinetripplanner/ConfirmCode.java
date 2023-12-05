@@ -20,7 +20,9 @@ public class ConfirmCode extends HttpServlet {
             out.println("<!DOCTYPE html>\n");
             out.println("<html>\n");
             out.println("<head></head>\n");
-            out.println("<body> <h2> Incorrect confirmation code. </h2></body>\n");
+            out.println("<body> <h2 style='text-align: center;'> Incorrect confirmation code. </h2>" +
+                    "<br><br> <h2 style='text-align: center;'> Please enter <a href='ForgotPassword.jsp'>email</a> again.</h2>" +
+                    "</body>\n");
             out.println("</html>");
         }
     }

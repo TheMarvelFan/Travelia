@@ -1,21 +1,23 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Super
-  Date: 29-11-2023
-  Time: 16:45
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <html>
 <head>
     <title> Confirmation </title>
 </head>
 <body>
-<h3> An email has been sent to your ID with the confirmation code. Please type it below.</h3>
+<h1 style="text-align: center;"> An email has been sent to your ID with the confirmation code. Please type it below.</h1> <br><br><br><br><br><br><br><br>
 <form action="confirmcode" method="post">
-    <input type="text" name="code" placeholder="Confirmation Code">
-    <label> For now, use 0000 as code</label>
-    <button type="submit"> Submit </button>
+    <input style="font-size: 14pt; width: 206px; height: 40px; margin-left: 658px;" type="numeric" name="code" id="confirmationCode" placeholder="Enter confirmation code" oninput="validateCode()"> <br><br>
+    <label style="font-size: 13pt; margin-left: 672px;"> For now, use 0000 as code</label><br><br>
+    <button style="font-size: 14pt; width: 100px; height: 40px; margin-left: 710px;" type="submit" id="submitButton" disabled> Submit </button>
+
+    <script>
+        function validateCode() {
+            const codeInput = document.getElementById('confirmationCode');
+            const submitButton = document.getElementById('submitButton');
+
+            submitButton.disabled = codeInput.value.length !== 4;
+        }
+    </script>
 </form>
 </body>
 </html>

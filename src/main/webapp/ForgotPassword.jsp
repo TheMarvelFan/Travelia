@@ -75,10 +75,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
 </div>
+<br><br><br><br><br>
 <div>
     <form action="forgotpass" method="post">
-    <label>Enter your email: </label> <input type="email" name="email" id="email" placeholder="Enter your email" required>
-    <button> Submit </button>
+        <input style="width: 265px; height: 30px; font-size: 14pt; margin-left: 650px; text-align: center;" type="email" name="email" id="email" placeholder="Enter your registered email" required><br><br>
+        <button style="width: 80px; height: 30px; font-size: 13pt; margin-left: 750px;"> Submit </button>
     </form>
 </div>
 <!--//contact-->
