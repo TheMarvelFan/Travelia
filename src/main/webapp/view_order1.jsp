@@ -51,10 +51,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="menu"></span>
 				<div class="top-menu">
 				<ul class="cl-effect-16">
-						<li><a class="" href="adminHome.jsp" data-hover="HOME">Home</a></li> 
 						<li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip plan</a></li>
 				         	<li><a href="viewbooking.jsp" data-hover="View">View Booking</a></li>
-                                                <li><a href="viewfeedback.jsp" data-hover="feedback">View Feedback</a></li>
+                        <li><a href="viewfeedback.jsp" data-hover="feedback">View Feedback</a></li>
 	
                                                 
 					</ul>
@@ -62,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="top_right">
 					<ul class="f-icons">
                                             <li><a href="logout" class=""><h4 style="color:red;" >Logout </h4></a></li>
-						<li><a href="#" class="">| </a></li>
+						<li>|</li>
                                                 <li><a href="" class=""> <h4 style="color:greenyellow;">Change Password</h4></a></li>
 					</ul>
 

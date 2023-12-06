@@ -48,8 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="menu"></span>
             <div class="top-menu">
                 <ul class="cl-effect-16">
-                    <li><a class="" href="adminHome.jsp" data-hover="HOME">Home</a></li>
-                    <li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip plan</a></li>\
+                    <li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip plan</a></li>
                     <li><a href="viewbooking.jsp" data-hover="View Booking">View Booking</a></li>
                     <li><a href="DeleteTrip.jsp" data-hover="Delete / View">Delete / View</a></li>
                     <li><a href="viewfeedback.jsp" data-hover="View Feedback">View Feedback</a></li>
@@ -93,9 +92,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <fieldset width="100px" height="400px">
                     <legend><h1 style="color: orange;">Change Password</h1></legend>
                     <table>
-                        <br></br>
-                        <tr height="30px"><td>Old_Password</td><td width="20px"></td><td><input type="password" name="t1" style="height: 20px"></td></tr>
-                        <tr height="30px"><td> New_Password</td><td width="20px"></td><td><input type="password" name="t2" style="height: 20px"></td></tr>
+                        <br>
+                        <tr height="30px"><td>Old Password</td><td width="20px"></td><td><input type="password" name="t1" style="height: 20px"></td></tr>
+                        <tr height="30px"><td> New Password</td><td width="20px"></td><td><input type="password" name="t2" style="height: 20px"></td></tr>
 
                         <tr height="30px"></tr><tr height="30px"><td><input type="submit" value="Change" style="width:90px;height: 30px ;background-color:lightskyblue;"> </td><td width="20px"></td><td><input type="reset" value="Clear" style="width: 90px ;height: 30px;background-color: indianred;"></td></tr>
 

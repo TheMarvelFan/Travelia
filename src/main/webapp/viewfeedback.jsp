@@ -51,7 +51,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="menu"></span>
             <div class="top-menu">
                 <ul class="cl-effect-16">
-                    <li><a class="" href="adminHome.jsp" data-hover="HOME">Home</a></li>
                     <li><a href="Add_trip.jsp" data-hover="Add Trip Plan">Add Trip Plan</a></li>
                     <li><a href="DeleteTrip.jsp" data-hover="Delete / View">Delete / View</a></li>
                     <li><a href="viewbooking.jsp" data-hover="View Booking">View Booking</a></li>
@@ -61,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="f-icons">
                     <li><a href="logout" class=""><h4 style="color:red;" >Logout </h4></a></li>
                     <li>|</li>
-                    <li><a href="" class=""> <h4 style="color:greenyellow;">Change Password</h4></a></li>
+                    <li><a href="changePass.jsp" class=""> <h4 style="color:greenyellow;">Change Password</h4></a></li>
                 </ul>
 
             </div>
@@ -81,21 +80,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <div class="banner two">
         <div class="container">
-            <h2 class="second">ADMIN PANEL </h2>
+            <h2 class="second">ADMIN PANEL</h2>
         </div>
     </div>
 </div>
+<br>
 <div style="text-align: center;">
-
     <h2 style="color: #484095;">View Feedback</h2>
     <%
         try {
             Statement statement = DataBConnection.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery("select id, sub, msg from feedback");
-            out.println("<div style=\"text-align: center;\">");
+            out.println("<br><br><div style=\"text-align: center;\">");
 
 
-            out.println("<table width=900");
+            out.println("<table style='margin-left: 340px' width=900");
 
             out.println("<tr height=70 bgcolor=#68D3D4>");
             out.println("<td>Member_id</id><td>Subject</td><td>Message</td>");

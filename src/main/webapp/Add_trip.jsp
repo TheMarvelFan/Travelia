@@ -33,8 +33,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     String user=(String)st.getAttribute("user1");
     String pass=(String)st.getAttribute("pass1");
 
-    if(user==null||pass==null)
-        response.sendRedirect("login.jsp?msg=Please login first!!!!");
+    if(user==null||pass==null) {
+        response.sendRedirect("login.jsp?msg=Please login first!");
+    }
 %>
 
 <!--start-home-->
@@ -47,7 +48,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <span class="menu"></span>
             <div class="top-menu">
                 <ul class="cl-effect-16">
-                    <li><a href="adminHome.jsp" data-hover="Home">Home</a></li>
                     <li><a href="DeleteTrip.jsp" data-hover="Delete / View">Delete / View</a></li>
                     <li><a href="viewbooking.jsp" data-hover="View Booking">View Booking</a></li>
                     <li><a href="viewfeedback.jsp" data-hover="View Feedback">View Feedback</a></li>
@@ -84,20 +84,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--start-about-->
 <div class="about">
 
-    <div style="text-align: center;">
+    <div style="margin-left: 500px; text-align: center;">
         <form method="post" action="addtrip" enctype="multipart/form-data">
             <fieldset>
-                <legend><h1 style="color: orange;">Add Trip </h1></legend>
-                <table>
-                    <tr height="30px"><td style="width: 20px"></td><select name="t1"><option value="Family_Travel">Family Travel</option><option value="Honeymoon_Package">Honeymoon Package</option><option value="Group_Travel">Group Travel</option></select></tr>
+                <legend><h1 style="margin-left: -448px ; color: orange;">Add Trip </h1></legend>
+                <table style="margin-left: 126px;">
+                    <tr height="30px"><select name="t1" style="margin-left: -386px;"><option value="Family_Travel">Family Travel</option><option value="Honeymoon_Package">Honeymoon Package</option><option value="Group_Travel">Group Travel</option></select></tr>
                     <tr height="30px"><td>Location<label style="color:red;">* </label> </td><td style="width: 20px" ></td><td><input type="text" name="t2" style="height: 20px"></td></tr>
-                    <tr height="30px"><td>Trip_Day<label style="color:red;">* </label></td><td style="width: 20px" ></td><td><input type="text" name="t3" style="height: 20px"></td></tr>
-                    <tr height="30px"><td>Trip_Price <label style="color:red;">* </label></td><td style="width: 20px" ></td><td><input type="number" name="t4" style="height: 20px"></td></tr>
-                    <tr height="30px"><td>Description <label style="color:red;">* </label></td><td style="width: 20px" ></td><td><textarea name="t5"></textarea></td></tr>
+                    <tr height="30px"><td>Trip Day<label style="color:red;">* </label></td><td style="width: 20px" ></td><td><input type="text" name="t3" style="height: 20px"></td></tr>
+                    <tr height="30px"><td>Trip Price<label style="color:red;">* </label></td><td style="width: 20px" ></td><td><input type="number" name="t4" style="height: 20px"></td></tr>
+                    <tr height="30px"><td>Description<label style="color:red;">* </label></td><td style="width: 20px" ></td><td><textarea name="t5"></textarea></td></tr>
 
                     <tr height="30px"><td>Photo <label style="color:red;">* </label></td><td style="width: 20px" ></td><td><input type="file" name="t6" style="height: 20px"></td></tr>
 
-                    <tr height="30px"></tr><tr height="30px"><td><input type="submit" value="Add" style="width:90px;height: 30px ;background-color:lightskyblue;"> </td><td style="width: 20px" ></td><td><input type="reset" value="Clear" style="width: 90px ;height: 30px;background-color: indianred;"></td></tr>
+                    <tr height="30px"></tr><tr height="30px"><td><input type="submit" value="Add" style="margin-left: 57px; width:90px;height: 30px ;background-color:lightskyblue;"> </td><td style="width: 20px" ></td><td><input type="reset" value="Clear" style="width: 90px ;height: 30px;background-color: indianred;"></td></tr>
 
                     <tr height="50px">
 

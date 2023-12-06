@@ -27,7 +27,7 @@ public class Login extends HttpServlet {
             if (resultSet.next()) {
                 session.setAttribute("user1", user);
                 session.setAttribute("pass1", password);
-                response.sendRedirect("adminHome.jsp");
+                response.sendRedirect("Add_trip.jsp");
             } else {
                 response.sendRedirect("login.jsp?msg=Invalid user id and/or password!");
             }
